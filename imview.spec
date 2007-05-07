@@ -9,9 +9,11 @@ Source:    http://experimental.act.cmis.csiro.au/imview/download/imview-src-%{ve
 Patch0:    imview-www-browser.patch
 URL: 	   http://www.cmis.csiro.au/hugues.talbot/imview
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-
-BuildRequires: fltk-devel ImageMagick-devel tiff-devel jpeg-devel
-
+BuildRequires: fltk-devel
+BuildRequires: jpeg-devel
+BuildRequires: libmagick-devel
+BuildRequires: libxinerama-devel
+BuildRequires: tiff-devel
 
 %description
 This application allows the user to display a variety of image formats

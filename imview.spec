@@ -8,7 +8,6 @@ Source:    http://experimental.act.cmis.csiro.au/imview/download/imview-src-%{ve
 # use www-browser instead of netscape to display docs
 Patch0:    imview-www-browser.patch
 URL: 	   http://www.cmis.csiro.au/hugues.talbot/imview
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: fltk-devel
 BuildRequires: jpeg-devel
 BuildRequires: libmagick-devel

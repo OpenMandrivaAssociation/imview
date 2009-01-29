@@ -1,7 +1,7 @@
 Summary:   Image display and analysis
 Name:      imview
 Version:   1.1.8
-Release:   %mkrel 9
+Release:   %mkrel 8
 License:   GPL
 Group:     Graphics
 Source:    http://experimental.act.cmis.csiro.au/imview/download/imview-src-%{version}.tar.bz2
@@ -23,14 +23,14 @@ designed with the profesionnal image analysis/image processing person
 in mind.
 
 %prep
-%setup
+%setup -q
 %patch0
 
 %build
 # needed to build on x86_64
 export CXXFLAGS="$RPM_BUILD_OPTS -fpermissive"
 
-%configure --with-jpeg --with-tiff --with-magick
+%configure2_5x --with-jpeg --with-tiff --with-magick
 %make depend
 %make
 

@@ -2,11 +2,13 @@ Summary:   Image display and analysis
 Name:      imview
 Version:   1.1.8
 Release:   %mkrel 8
-License:   GPL
+License:   GPLv2+
 Group:     Graphics
 Source:    http://experimental.act.cmis.csiro.au/imview/download/imview-src-%{version}.tar.bz2
 # use www-browser instead of netscape to display docs
 Patch0:    imview-www-browser.patch
+Patch1:	   imview-1.1.8-dont-link-static.patch
+Patch2:	   imview-1.1.8-includes.patch
 URL: 	   http://www.cmis.csiro.au/hugues.talbot/imview
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: fltk-devel
@@ -25,6 +27,9 @@ in mind.
 %prep
 %setup -q
 %patch0
+%patch1 -p1
+%patch2 -p1
+autoconf
 
 %build
 # needed to build on x86_64

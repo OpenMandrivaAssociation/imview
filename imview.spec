@@ -1,7 +1,7 @@
 Summary:   Image display and analysis
 Name:      imview
 Version:   1.1.8
-Release:   %mkrel 8
+Release:   %mkrel 9
 License:   GPLv2+
 Group:     Graphics
 Source:    http://experimental.act.cmis.csiro.au/imview/download/imview-src-%{version}.tar.bz2

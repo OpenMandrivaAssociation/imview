@@ -1,0 +1,30 @@
+*** menucb.cxx.orig	2005-09-20 14:29:07.000000000 +0200
+--- menucb.cxx	2005-09-20 14:31:59.000000000 +0200
+***************
+*** 968,982 ****
+      static char command[1024];
+  
+      sprintf(command,
+! 	    "netscape -remote openURL\\(%s,new-window\\)", HELPURL);
+      int ret = system((const char *)command);
+      if (ret != 0) {
+! 	// try calling netscape directly!
+! 	sprintf(command,
+! 		"netscape %s &", HELPURL);
+! 	ret = system((const char *)command);
+! 	if (ret != 0)
+! 	    errprintf("Sorry, can't start netscape\n"
+  		      "Help URL is:\n"
+  		      "%s",
+  		      HELPURL);
+--- 968,977 ----
+      static char command[1024];
+  
+      sprintf(command,
+! 	    "www-browser %s &", HELPURL);
+      int ret = system((const char *)command);
+      if (ret != 0) {
+! 	    errprintf("Sorry, can't start your brower\n"
+  		      "Help URL is:\n"
+  		      "%s",
+  		      HELPURL);

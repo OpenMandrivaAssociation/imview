@@ -1,0 +1,15 @@
+diff -p -up imview-1.1.8/configure.in~ imview-1.1.8/configure.in
+--- imview-1.1.8/configure.in~	2005-02-05 16:10:48.000000000 +0100
++++ imview-1.1.8/configure.in	2009-01-29 13:33:09.000000000 +0100
+@@ -253,9 +253,9 @@ else
+ 	fltk_include_flags=`$my_fltk_config --cxxflags`
+ 	FLUID=${START}fluid
+ 	dnl Include extra library (FLTK-1.1.x) for handling various image formats.
+-	LDFLAGS="$LDFLAGS `$my_fltk_config --use-images --ldstaticflags`"
++	LDFLAGS="$LDFLAGS `$my_fltk_config --use-images --ldflags`"
+ 	CPPFLAGS="$CPPFLAGS $fltk_include_flags"
+-	FLTKLIB="`$my_fltk_config --use-images --ldstaticflags`"
++	FLTKLIB="`$my_fltk_config --use-images --ldflags`"
+ 	fltklib=$fltk_cfg_name
+ fi
+ 

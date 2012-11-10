@@ -1,0 +1,33 @@
+diff -p -up imview-1.1.8/bivHist.cxx~ imview-1.1.8/bivHist.cxx
+--- imview-1.1.8/bivHist.cxx~	2003-06-03 18:11:49.000000000 +0200
++++ imview-1.1.8/bivHist.cxx	2009-01-29 14:36:42.000000000 +0100
+@@ -45,6 +45,7 @@
+ 
+ #include <stdlib.h>
+ #include <stdio.h> // for sprintf
++#include <limits.h>
+ 
+ #include <algorithm>
+ 
+diff -p -up imview-1.1.8/imview.cxx~ imview-1.1.8/imview.cxx
+--- imview-1.1.8/imview.cxx~	2004-06-24 14:16:22.000000000 +0200
++++ imview-1.1.8/imview.cxx	2009-01-29 14:35:05.000000000 +0100
+@@ -59,6 +59,7 @@
+ #include "imunistd.h"
+ #include <stdio.h>
+ #include <stdlib.h>
++#include <limits.h>
+ #include <string.h>
+ #include <ctype.h>
+ #include <time.h>
+diff -p -up imview-1.1.8/pointfile.cxx~ imview-1.1.8/pointfile.cxx
+--- imview-1.1.8/pointfile.cxx~	2004-08-10 11:40:54.000000000 +0200
++++ imview-1.1.8/pointfile.cxx	2009-01-29 14:35:52.000000000 +0100
+@@ -52,6 +52,7 @@
+ #include <vector>   // STL
+ #include <algorithm>
+ #include <functional>
++#include <cstring>
+ #include <assert.h>
+ #include "imunistd.h"
+ #include "imview.hxx"

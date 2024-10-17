@@ -9,7 +9,7 @@ Source:    http://experimental.act.cmis.csiro.au/imview/download/imview-src-%{ve
 Patch0:    imview-www-browser.patch
 Patch1:	   imview-1.1.8-dont-link-static.patch
 Patch2:	   imview-1.1.8-includes.patch
-URL: 	   http://www.cmis.csiro.au/hugues.talbot/imview
+URL: 	   https://www.cmis.csiro.au/hugues.talbot/imview
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: fltk-devel
 BuildRequires: jpeg-devel

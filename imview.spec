@@ -11,6 +11,11 @@ Patch1:	   imview-1.1.8-dont-link-static.patch
 Patch2:	   imview-1.1.8-includes.patch
 URL: 	   https://www.cmis.csiro.au/hugues.talbot/imview
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: fltk-devel
 BuildRequires: jpeg-devel
 BuildRequires: libmagick-devel
